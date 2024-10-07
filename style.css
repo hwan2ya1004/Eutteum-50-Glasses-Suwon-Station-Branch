@@ -5,32 +5,39 @@
 }
 
 body {
-    font-family: 'Helvetica', sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Noto Sans KR', sans-serif;
     color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-header {
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
     background-color: #004080;
-    padding: 10px 0;
+    padding: 20px 0;
     color: white;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    text-align: center;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .nav-list {
     list-style: none;
-    display: flex;
-    gap: 15px;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px;
 }
 
 .nav-list a {
@@ -40,10 +47,8 @@ header {
 }
 
 .hero {
-    background-image: url('your-image.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background: url('your-image.jpg') no-repeat center center/cover;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,33 +57,72 @@ header {
 }
 
 .hero-text {
-    background-color: rgba(0, 64, 128, 0.6);
-    padding: 20px;
-    border-radius: 5px;
+    background-color: rgba(0, 64, 128, 0.7);
+    padding: 40px;
+    border-radius: 10px;
 }
 
 .hero-btn {
+    display: inline-block;
+    padding: 10px 20px;
     background-color: #ff9900;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
-#products {
-    padding: 40px 20px;
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
     text-align: center;
+    font-weight: bold;
 }
 
-#about, #reservation {
-    padding: 40px 20px;
-    background-color: #eaeaea;
+.section-text {
     text-align: center;
+    margin-bottom: 40px;
 }
 
-footer {
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+.product-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.btn {
     background-color: #004080;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+    border: none;
+    padding: 10px 20px;
+    border-radius:
