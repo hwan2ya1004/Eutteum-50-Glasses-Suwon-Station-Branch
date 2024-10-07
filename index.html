@@ -11,8 +11,8 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
+    <header class="header">
+        <div class="container">
             <h1 class="logo">안경원</h1>
             <nav>
                 <ul class="nav-list">
@@ -35,32 +35,38 @@
         </div>
     </section>
 
-    <section id="products">
-        <h2>제품 목록</h2>
-        <div id="product-list">
-            <!-- 상품 목록 추가 -->
+    <section id="products" class="section">
+        <div class="container">
+            <h2 class="section-title">제품 목록</h2>
+            <div id="product-list" class="product-list">
+                <!-- 상품 목록이 자바스크립트로 추가됩니다 -->
+            </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2>브랜드 소개</h2>
-        <p>당신의 눈 건강을 지키기 위해 최선을 다하는 안경원입니다.</p>
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">브랜드 소개</h2>
+            <p class="section-text">당신의 눈 건강을 지키기 위해 최선을 다하는 안경원입니다.</p>
+        </div>
     </section>
 
-    <section id="reservation">
-        <h2>예약하기</h2>
-        <form id="reservation-form">
-            <label for="name">이름:</label>
-            <input type="text" id="name" required>
-            <label for="date">날짜:</label>
-            <input type="date" id="date" required>
-            <button type="submit">예약</button>
-        </form>
-        <div id="reservation-result"></div>
+    <section id="reservation" class="section">
+        <div class="container">
+            <h2 class="section-title">예약하기</h2>
+            <form id="reservation-form" class="reservation-form">
+                <label for="name">이름:</label>
+                <input type="text" id="name" required>
+                <label for="date">날짜:</label>
+                <input type="date" id="date" required>
+                <button type="submit" class="btn">예약</button>
+            </form>
+            <div id="reservation-result"></div>
+        </div>
     </section>
 
-    <footer>
-        <div class="footer-container">
+    <footer class="footer">
+        <div class="container">
             <p>&copy; 2024 안경원. All rights reserved.</p>
         </div>
     </footer>
