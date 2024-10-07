@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안경원 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script> <!-- 카카오 SDK -->
+    <script>
+        // 카카오 SDK 초기화
+        Kakao.init('YOUR_JAVASCRIPT_KEY'); // 발급받은 JavaScript 키로 대체
+        console.log(Kakao.isInitialized()); // SDK 초기화 확인용 로그
+    </script>
+</head>
+<body>
+    <header>
+        <h1>안경원</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#products">상품</a></li>
+                <li><a href="#reservation">예약</a></li>
+                <li><a href="#contact">연락처</a></li>
+                <li><a href="#login">로그인</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 로그인 페이지 -->
+        <section id="login">
+            <h2>로그인</h2>
+            <button id="kakao-login-btn">카카오로 로그인</button>
+            <div id="login-result"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
