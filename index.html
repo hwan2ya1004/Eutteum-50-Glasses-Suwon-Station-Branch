@@ -3,37 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>안경원 홈페이지</title>
+    <title>안경원</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script> <!-- 카카오 SDK -->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
-        // 카카오 SDK 초기화
-        Kakao.init('YOUR_JAVASCRIPT_KEY'); // 발급받은 JavaScript 키로 대체
-        console.log(Kakao.isInitialized()); // SDK 초기화 확인용 로그
+        Kakao.init('YOUR_JAVASCRIPT_KEY');
     </script>
 </head>
 <body>
     <header>
-        <h1>안경원</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">홈</a></li>
-                <li><a href="#products">상품</a></li>
-                <li><a href="#reservation">예약</a></li>
-                <li><a href="#contact">연락처</a></li>
-                <li><a href="#login">로그인</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1 class="logo">안경원</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#products">제품</a></li>
+                    <li><a href="#about">브랜드 소개</a></li>
+                    <li><a href="#reservation">예약</a></li>
+                    <li><a href="#contact">연락처</a></li>
+                    <li><a href="#login">로그인</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- 로그인 페이지 -->
-        <section id="login">
-            <h2>로그인</h2>
-            <button id="kakao-login-btn">카카오로 로그인</button>
-            <div id="login-result"></div>
-        </section>
-    </main>
+    <section class="hero">
+        <div class="hero-text">
+            <h2>당신의 눈을 위한 최고의 선택</h2>
+            <p>고객 맞춤형 안경 및 렌즈를 만나보세요.</p>
+            <a href="#products" class="hero-btn">더 알아보기</a>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>제품 목록</h2>
+        <div id="product-list">
+            <!-- 상품 목록 추가 -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>브랜드 소개</h2>
+        <p>당신의 눈 건강을 지키기 위해 최선을 다하는 안경원입니다.</p>
+    </section>
+
+    <section id="reservation">
+        <h2>예약하기</h2>
+        <form id="reservation-form">
+            <label for="name">이름:</label>
+            <input type="text" id="name" required>
+            <label for="date">날짜:</label>
+            <input type="date" id="date" required>
+            <button type="submit">예약</button>
+        </form>
+        <div id="reservation-result"></div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 안경원. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
